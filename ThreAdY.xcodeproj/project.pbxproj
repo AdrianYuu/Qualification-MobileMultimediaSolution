@@ -9,23 +9,27 @@
 /* Begin PBXBuildFile section */
 		3A8BA02E2C74429000C26FCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8BA02D2C74429000C26FCF /* AppDelegate.swift */; };
 		3A8BA0302C74429000C26FCF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8BA02F2C74429000C26FCF /* SceneDelegate.swift */; };
-		3A8BA0322C74429000C26FCF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8BA0312C74429000C26FCF /* ViewController.swift */; };
 		3A8BA0352C74429000C26FCF /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 3A8BA0342C74429000C26FCF /* Base */; };
-		3A8BA0382C74429000C26FCF /* ThreAdY.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A8BA0362C74429000C26FCF /* ThreAdY.xcdatamodeld */; };
 		3A8BA03A2C74429100C26FCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A8BA0392C74429100C26FCF /* Assets.xcassets */; };
 		3A8BA03D2C74429100C26FCF /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 3A8BA03C2C74429100C26FCF /* Base */; };
+		3A8BA0462C7444AA00C26FCF /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8BA0452C7444AA00C26FCF /* RegisterViewController.swift */; };
+		3A8BA0492C74558C00C26FCF /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8BA0482C74558C00C26FCF /* AlertHelper.swift */; };
+		3A8BA04B2C745E1500C26FCF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8BA04A2C745E1500C26FCF /* LoginViewController.swift */; };
+		3A8BA05B2C74793D00C26FCF /* ThreAdY.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A8BA0592C74793D00C26FCF /* ThreAdY.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3A8BA02A2C74429000C26FCF /* ThreAdY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreAdY.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A8BA02D2C74429000C26FCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A8BA02F2C74429000C26FCF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3A8BA0312C74429000C26FCF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3A8BA0342C74429000C26FCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3A8BA0372C74429000C26FCF /* ThreAdY.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ThreAdY.xcdatamodel; sourceTree = "<group>"; };
 		3A8BA0392C74429100C26FCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A8BA03C2C74429100C26FCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A8BA03E2C74429100C26FCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A8BA0452C7444AA00C26FCF /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		3A8BA0482C74558C00C26FCF /* AlertHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
+		3A8BA04A2C745E1500C26FCF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3A8BA05A2C74793D00C26FCF /* ThreAdY.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ThreAdY.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +62,34 @@
 		3A8BA02C2C74429000C26FCF /* ThreAdY */ = {
 			isa = PBXGroup;
 			children = (
+				3A8BA0472C74556D00C26FCF /* Helpers */,
+				3A8BA0442C74449200C26FCF /* ViewControllers */,
 				3A8BA02D2C74429000C26FCF /* AppDelegate.swift */,
 				3A8BA02F2C74429000C26FCF /* SceneDelegate.swift */,
-				3A8BA0312C74429000C26FCF /* ViewController.swift */,
 				3A8BA0332C74429000C26FCF /* Main.storyboard */,
 				3A8BA0392C74429100C26FCF /* Assets.xcassets */,
 				3A8BA03B2C74429100C26FCF /* LaunchScreen.storyboard */,
 				3A8BA03E2C74429100C26FCF /* Info.plist */,
-				3A8BA0362C74429000C26FCF /* ThreAdY.xcdatamodeld */,
+				3A8BA0592C74793D00C26FCF /* ThreAdY.xcdatamodeld */,
 			);
 			path = ThreAdY;
+			sourceTree = "<group>";
+		};
+		3A8BA0442C74449200C26FCF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3A8BA0452C7444AA00C26FCF /* RegisterViewController.swift */,
+				3A8BA04A2C745E1500C26FCF /* LoginViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3A8BA0472C74556D00C26FCF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3A8BA0482C74558C00C26FCF /* AlertHelper.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,10 +163,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A8BA0322C74429000C26FCF /* ViewController.swift in Sources */,
-				3A8BA0382C74429000C26FCF /* ThreAdY.xcdatamodeld in Sources */,
+				3A8BA04B2C745E1500C26FCF /* LoginViewController.swift in Sources */,
+				3A8BA05B2C74793D00C26FCF /* ThreAdY.xcdatamodeld in Sources */,
 				3A8BA02E2C74429000C26FCF /* AppDelegate.swift in Sources */,
 				3A8BA0302C74429000C26FCF /* SceneDelegate.swift in Sources */,
+				3A8BA0492C74558C00C26FCF /* AlertHelper.swift in Sources */,
+				3A8BA0462C7444AA00C26FCF /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,13 +391,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		3A8BA0362C74429000C26FCF /* ThreAdY.xcdatamodeld */ = {
+		3A8BA0592C74793D00C26FCF /* ThreAdY.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				3A8BA0372C74429000C26FCF /* ThreAdY.xcdatamodel */,
+				3A8BA05A2C74793D00C26FCF /* ThreAdY.xcdatamodel */,
 			);
-			currentVersion = 3A8BA0372C74429000C26FCF /* ThreAdY.xcdatamodel */;
-			path = ThreAdY.xcdatamodeld;
+			currentVersion = 3A8BA05A2C74793D00C26FCF /* ThreAdY.xcdatamodel */;
+			name = ThreAdY.xcdatamodeld;
+			path = /Users/adrian/Documents/Swift/ThreAdY/ThreAdY/ThreAdY.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
