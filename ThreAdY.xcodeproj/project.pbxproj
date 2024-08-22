@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A1CDBC12C756CE700FB197E /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1CDBC02C756CE700FB197E /* UserService.swift */; };
+		3A1CDBC42C756ED500FB197E /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1CDBC32C756ED500FB197E /* Response.swift */; };
+		3A1CDBC62C7571A500FB197E /* NavigationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1CDBC52C7571A500FB197E /* NavigationService.swift */; };
+		3A1CDBC82C75720600FB197E /* PageDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1CDBC72C75720600FB197E /* PageDestination.swift */; };
+		3A809BD72C771EEC009735AB /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A809BD52C771EEC009735AB /* User+CoreDataClass.swift */; };
+		3A809BD82C771EEC009735AB /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A809BD62C771EEC009735AB /* User+CoreDataProperties.swift */; };
 		3A8BA02E2C74429000C26FCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8BA02D2C74429000C26FCF /* AppDelegate.swift */; };
 		3A8BA0302C74429000C26FCF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8BA02F2C74429000C26FCF /* SceneDelegate.swift */; };
 		3A8BA0352C74429000C26FCF /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 3A8BA0342C74429000C26FCF /* Base */; };
@@ -15,10 +21,17 @@
 		3A8BA0462C7444AA00C26FCF /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8BA0452C7444AA00C26FCF /* RegisterViewController.swift */; };
 		3A8BA0492C74558C00C26FCF /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8BA0482C74558C00C26FCF /* AlertHelper.swift */; };
 		3A8BA04B2C745E1500C26FCF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8BA04A2C745E1500C26FCF /* LoginViewController.swift */; };
-		3A8BA05B2C74793D00C26FCF /* ThreAdY.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A8BA0592C74793D00C26FCF /* ThreAdY.xcdatamodeld */; };
+		3AF80CA62C76FFF00069EC6D /* ThreAdY.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3AF80CA42C76FFF00069EC6D /* ThreAdY.xcdatamodeld */; };
+		3AF80CAE2C7715BA0069EC6D /* SessionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF80CAD2C7715BA0069EC6D /* SessionHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A1CDBC02C756CE700FB197E /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		3A1CDBC32C756ED500FB197E /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		3A1CDBC52C7571A500FB197E /* NavigationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationService.swift; sourceTree = "<group>"; };
+		3A1CDBC72C75720600FB197E /* PageDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageDestination.swift; sourceTree = "<group>"; };
+		3A809BD52C771EEC009735AB /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "User+CoreDataClass.swift"; path = "ThreAdY/Models/User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3A809BD62C771EEC009735AB /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "User+CoreDataProperties.swift"; path = "ThreAdY/Models/User+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		3A8BA02A2C74429000C26FCF /* ThreAdY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreAdY.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A8BA02D2C74429000C26FCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A8BA02F2C74429000C26FCF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -29,7 +42,8 @@
 		3A8BA0452C7444AA00C26FCF /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		3A8BA0482C74558C00C26FCF /* AlertHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
 		3A8BA04A2C745E1500C26FCF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		3A8BA05A2C74793D00C26FCF /* ThreAdY.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ThreAdY.xcdatamodel; sourceTree = "<group>"; };
+		3AF80CA52C76FFF00069EC6D /* ThreAdY.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ThreAdY.xcdatamodel; sourceTree = "<group>"; };
+		3AF80CAD2C7715BA0069EC6D /* SessionHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,9 +57,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A1CDBBF2C756CDA00FB197E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3A1CDBC02C756CE700FB197E /* UserService.swift */,
+				3A1CDBC52C7571A500FB197E /* NavigationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3A1CDBC22C756ECC00FB197E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3A1CDBC32C756ED500FB197E /* Response.swift */,
+				3A1CDBC72C75720600FB197E /* PageDestination.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		3A8BA0212C74429000C26FCF = {
 			isa = PBXGroup;
 			children = (
+				3A809BD52C771EEC009735AB /* User+CoreDataClass.swift */,
+				3A809BD62C771EEC009735AB /* User+CoreDataProperties.swift */,
 				3A8BA02C2C74429000C26FCF /* ThreAdY */,
 				3A8BA02B2C74429000C26FCF /* Products */,
 			);
@@ -62,6 +96,8 @@
 		3A8BA02C2C74429000C26FCF /* ThreAdY */ = {
 			isa = PBXGroup;
 			children = (
+				3A1CDBC22C756ECC00FB197E /* Models */,
+				3A1CDBBF2C756CDA00FB197E /* Services */,
 				3A8BA0472C74556D00C26FCF /* Helpers */,
 				3A8BA0442C74449200C26FCF /* ViewControllers */,
 				3A8BA02D2C74429000C26FCF /* AppDelegate.swift */,
@@ -70,7 +106,7 @@
 				3A8BA0392C74429100C26FCF /* Assets.xcassets */,
 				3A8BA03B2C74429100C26FCF /* LaunchScreen.storyboard */,
 				3A8BA03E2C74429100C26FCF /* Info.plist */,
-				3A8BA0592C74793D00C26FCF /* ThreAdY.xcdatamodeld */,
+				3AF80CA42C76FFF00069EC6D /* ThreAdY.xcdatamodeld */,
 			);
 			path = ThreAdY;
 			sourceTree = "<group>";
@@ -78,8 +114,8 @@
 		3A8BA0442C74449200C26FCF /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				3A8BA0452C7444AA00C26FCF /* RegisterViewController.swift */,
 				3A8BA04A2C745E1500C26FCF /* LoginViewController.swift */,
+				3A8BA0452C7444AA00C26FCF /* RegisterViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -88,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				3A8BA0482C74558C00C26FCF /* AlertHelper.swift */,
+				3AF80CAD2C7715BA0069EC6D /* SessionHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -163,12 +200,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A1CDBC42C756ED500FB197E /* Response.swift in Sources */,
+				3A1CDBC62C7571A500FB197E /* NavigationService.swift in Sources */,
+				3A1CDBC12C756CE700FB197E /* UserService.swift in Sources */,
 				3A8BA04B2C745E1500C26FCF /* LoginViewController.swift in Sources */,
-				3A8BA05B2C74793D00C26FCF /* ThreAdY.xcdatamodeld in Sources */,
+				3A809BD72C771EEC009735AB /* User+CoreDataClass.swift in Sources */,
+				3A809BD82C771EEC009735AB /* User+CoreDataProperties.swift in Sources */,
 				3A8BA02E2C74429000C26FCF /* AppDelegate.swift in Sources */,
 				3A8BA0302C74429000C26FCF /* SceneDelegate.swift in Sources */,
 				3A8BA0492C74558C00C26FCF /* AlertHelper.swift in Sources */,
+				3AF80CA62C76FFF00069EC6D /* ThreAdY.xcdatamodeld in Sources */,
+				3AF80CAE2C7715BA0069EC6D /* SessionHelper.swift in Sources */,
 				3A8BA0462C7444AA00C26FCF /* RegisterViewController.swift in Sources */,
+				3A1CDBC82C75720600FB197E /* PageDestination.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,12 +435,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		3A8BA0592C74793D00C26FCF /* ThreAdY.xcdatamodeld */ = {
+		3AF80CA42C76FFF00069EC6D /* ThreAdY.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				3A8BA05A2C74793D00C26FCF /* ThreAdY.xcdatamodel */,
+				3AF80CA52C76FFF00069EC6D /* ThreAdY.xcdatamodel */,
 			);
-			currentVersion = 3A8BA05A2C74793D00C26FCF /* ThreAdY.xcdatamodel */;
+			currentVersion = 3AF80CA52C76FFF00069EC6D /* ThreAdY.xcdatamodel */;
 			name = ThreAdY.xcdatamodeld;
 			path = /Users/adrian/Documents/Swift/ThreAdY/ThreAdY/ThreAdY.xcdatamodeld;
 			sourceTree = "<group>";

@@ -9,36 +9,36 @@ import UIKit
 import CoreData
 
 class LoginViewController: UIViewController {
-    
-    var context: NSManagedObjectContext!
 
     @IBOutlet weak var TFUsername: UITextField!
-    @IBOutlet weak var TFPassword: UITextField!
+    @IBOutlet weak var TFPassword: UITextField!	
     
     override func viewDidLoad() {
         self.navigationController?.setNavigationBarHidden(true, animated: true)
         super.viewDidLoad()
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        context = appDelegate.persistentContainer.viewContext
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
-
-    @IBAction func BtnLoginOnClick(_ sender: Any) {
+    
+    @IBAction func BtnSignInOnClick(_ sender: Any) {
         let username = TFUsername.text!
         let password = TFPassword.text!
         
-        if(username.isEmpty){
-            AlertHelper.alert(title: "Error", message: "Username is required.", on: self)
+        let response = UserService.shared.login(username: username, password: password)
+        if !response.isSuccess {
+            AlertHelper.shared.alert(title: "Error", message: response.message, on: self)
             return
         }
         
-        if(password.isEmpty){
-            AlertHelper.alert(title: "Error", message: "Password is required.", on: self)
-            return
-        }
+        // TODO: Navigate ke home page.
+        
+        AlertHelper.shared
+            .alert(title: "Success", message: response.message, on: self)
     }
     
+    @IBAction func BtnSignUpOnClick(_ sender: Any) {
+        NavigationService.shared.navigate(to: .register, from: self)
+    }
 }

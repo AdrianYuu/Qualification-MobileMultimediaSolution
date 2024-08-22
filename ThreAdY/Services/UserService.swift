@@ -2,53 +2,79 @@
 //  UserService.swift
 //  ThreAdY
 //
-//  Created by Adrian Yu on 20/08/24.
+//  Created by Adrian Yu on 21/08/24.
 //
 
 import Foundation
-import UIKit
 import CoreData
+import UIKit
 
 class UserService {
     
-    static func saveUserToCoreData(name: String, email: String, password: String, context: NSManagedObjectContext, storyboard: UIStoryboard, navigationController: UINavigationController?, completion: @escaping (Bool, String?) -> Void) {
-        let entity = NSEntityDescription.entity(forEntityName: "User", in: context)!
-        let newUser = NSManagedObject(entity: entity, insertInto: context)
+    static let shared = UserService()
+    
+    private var context: NSManagedObjectContext!
+    
+    private init(){
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        context = appDelegate.persistentContainer.viewContext
+    }
+    
+    func register(username: String, password: String) -> Response {
+        if username.isEmpty {
+            return Response(isSuccess: false, message: "Username can't be empty.", payload: nil)
+        }
+                            
+        if password.isEmpty {
+            return Response(isSuccess: false, message: "Password can't be empty.", payload: nil)
+        }
         
-        newUser.setValue(name, forKey: "name")
-        newUser.setValue(email, forKey: "email")
-        newUser.setValue(password, forKey: "password")
-        newUser.setValue("user", forKey: "role")
-        newUser.setValue(2000000, forKey: "balance")
+        let fetchRequest: NSFetchRequest<User> = User.fetchRequest()
+        fetchRequest.predicate = NSPredicate(format: "username == %@", username)
         
         do {
+            let result = try context.fetch(fetchRequest)
+            if !result.isEmpty {
+                return Response(isSuccess: false, message: "Username already exists.", payload: nil)
+            }
+            
+            let user = User(context: context)
+            user.username = username
+            user.password = password
+            
             try context.save()
             
-            // Navigate to login view
-            if let nextPage = storyboard.instantiateViewController(withIdentifier: "loginView") as? LoginViewController {
-                navigationController?.pushViewController(nextPage, animated: true)
-                completion(true, "Registration Successful. You can log in using your account now.")
-            }
+            return Response(isSuccess: true, message: "Successfully registered user.", payload: user)
         } catch {
-            completion(false, "Failed to save user data.")
+            return Response(isSuccess: false, message: "Failed to register user.", payload: nil)
+        }
+    }
+        
+    func login(username: String, password: String) -> Response {
+        if username.isEmpty {
+            return Response(isSuccess: false, message: "Username can't be empty.", payload: nil)
+        }
+                            
+        if password.isEmpty {
+            return Response(isSuccess: false, message: "Password can't be empty.", payload: nil)
+        }
+        
+        let fetchRequest: NSFetchRequest<User> = User.fetchRequest()
+        fetchRequest.predicate = NSPredicate(format: "username == %@ AND password == %@", username, password)
+        
+        do {
+            let result = try context.fetch(fetchRequest)
+            
+            if result.isEmpty {
+                return Response(isSuccess: false, message: "Invalid username or password.", payload: nil)
+            }
+            
+            let user = result.first!
+            
+            return Response(isSuccess: true, message: "Successfully logged in user.", payload: user)
+        } catch {
+            return Response(isSuccess: false, message: "Failed to log in.", payload: nil)
         }
     }
     
-    static func getUsers(onSuccess: (([NSManagedObject]) -> Void)?, onFailure: ((String) -> Void)?) {
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
-            onFailure?("Unable to access AppDelegate.")
-            return
-        }
-
-        let managedContext = appDelegate.persistentContainer.viewContext
-        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "User")
-
-        do {
-            let users = try managedContext.fetch(fetchRequest)
-            onSuccess?(users)
-        } catch let error as NSError {
-            onFailure?("Could not fetch. \(error), \(error.userInfo)")
-        }
-    }
-
 }
