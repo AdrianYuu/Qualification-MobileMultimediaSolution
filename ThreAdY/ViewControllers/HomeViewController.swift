@@ -56,7 +56,15 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
+            let currentUsername = SessionHelper.shared.getUsername()!
+            let user = UserService.shared.getUser(username: currentUsername).payload as! User
+            
             let postToDelete = posts[indexPath.row]
+            
+            if postToDelete.user != user {
+                AlertHelper.shared.alert(title: "Error", message: "Unauthorized", on: self)
+                return
+            }
             
             posts.remove(at: indexPath.row)
             
@@ -65,7 +73,10 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             if response.isSuccess {
                 tableView.deleteRows(at: [indexPath], with: .automatic)
                 tableView.reloadData()
+                return
             }
+            
+            AlertHelper.shared.alert(title: "Error", message: response.message, on: self)
         }
     }
     

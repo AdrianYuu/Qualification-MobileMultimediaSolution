@@ -353,7 +353,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYp-nm-Fga">
-                                                    <rect key="frame" x="295" y="78" width="54" height="34.333333333333343"/>
+                                                    <rect key="frame" x="284" y="78" width="54" height="34.333333333333343"/>
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="plain" title="Edit"/>
                                                     <connections>
@@ -372,7 +372,6 @@
                                                 <constraint firstAttribute="trailing" secondItem="KIj-hf-Mo9" secondAttribute="trailing" constant="10" id="bcp-E4-TDO"/>
                                                 <constraint firstAttribute="trailing" secondItem="Gpb-g5-qzF" secondAttribute="trailing" constant="10" id="dMc-tF-lPO"/>
                                                 <constraint firstAttribute="trailing" secondItem="nYp-nm-Fga" secondAttribute="trailing" constant="15" id="kXU-zv-RM2"/>
-                                                <constraint firstAttribute="trailing" secondItem="nYp-nm-Fga" secondAttribute="trailing" constant="4" id="rBB-bz-FAR"/>
                                                 <constraint firstItem="d7y-Wx-1PF" firstAttribute="top" secondItem="9sn-RY-aho" secondAttribute="bottom" constant="8" id="snS-k9-GjC"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -562,10 +561,10 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray4Color">
-            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
