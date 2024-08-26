@@ -44,7 +44,7 @@ class UserService {
             
             try context.save()
             
-            return Response(isSuccess: true, message: "Successfully registered user.", payload: user)
+            return Response(isSuccess:  true, message: "Successfully registered user.", payload: user)
         } catch {
             return Response(isSuccess: false, message: "Failed to register user.", payload: nil)
         }
@@ -71,9 +71,29 @@ class UserService {
             
             let user = result.first!
             
+            SessionHelper.shared.setUsername(username: user.username!)
+            
             return Response(isSuccess: true, message: "Successfully logged in user.", payload: user)
         } catch {
             return Response(isSuccess: false, message: "Failed to log in.", payload: nil)
+        }
+    }
+    
+    func getUser(username: String) -> Response {
+        let fetchRequest: NSFetchRequest<User> = User.fetchRequest()
+        fetchRequest.predicate = NSPredicate(format: "username == %@", username)
+        
+        do {
+            let result = try context.fetch(fetchRequest)
+            
+            if result.isEmpty {
+                return Response(isSuccess: false, message: "User not found.", payload: nil)
+            }
+            
+            let user = result.first!
+            return Response(isSuccess: true, message: "User found.", payload: user)
+        } catch {
+            return Response(isSuccess: false, message: "Failed to fetch user.", payload: nil)
         }
     }
     

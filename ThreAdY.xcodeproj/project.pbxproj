@@ -11,8 +11,8 @@
 		3A1CDBC42C756ED500FB197E /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1CDBC32C756ED500FB197E /* Response.swift */; };
 		3A1CDBC62C7571A500FB197E /* NavigationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1CDBC52C7571A500FB197E /* NavigationService.swift */; };
 		3A1CDBC82C75720600FB197E /* PageDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1CDBC72C75720600FB197E /* PageDestination.swift */; };
-		3A809BD72C771EEC009735AB /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A809BD52C771EEC009735AB /* User+CoreDataClass.swift */; };
-		3A809BD82C771EEC009735AB /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A809BD62C771EEC009735AB /* User+CoreDataProperties.swift */; };
+		3A87D8302C78503A008EEA48 /* CreatePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A87D82F2C78503A008EEA48 /* CreatePostViewController.swift */; };
+		3A87D8322C78504A008EEA48 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A87D8312C78504A008EEA48 /* ProfileViewController.swift */; };
 		3A8BA02E2C74429000C26FCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8BA02D2C74429000C26FCF /* AppDelegate.swift */; };
 		3A8BA0302C74429000C26FCF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8BA02F2C74429000C26FCF /* SceneDelegate.swift */; };
 		3A8BA0352C74429000C26FCF /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 3A8BA0342C74429000C26FCF /* Base */; };
@@ -21,6 +21,14 @@
 		3A8BA0462C7444AA00C26FCF /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8BA0452C7444AA00C26FCF /* RegisterViewController.swift */; };
 		3A8BA0492C74558C00C26FCF /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8BA0482C74558C00C26FCF /* AlertHelper.swift */; };
 		3A8BA04B2C745E1500C26FCF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8BA04A2C745E1500C26FCF /* LoginViewController.swift */; };
+		3AA4F00C2C7BF1E600D02E05 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA4F0082C7BF1E600D02E05 /* User+CoreDataClass.swift */; };
+		3AA4F00D2C7BF1E600D02E05 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA4F0092C7BF1E600D02E05 /* User+CoreDataProperties.swift */; };
+		3AA4F0112C7C00D800D02E05 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA4F0102C7C00D800D02E05 /* PostService.swift */; };
+		3AA4F0142C7C018600D02E05 /* Post+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA4F0122C7C018600D02E05 /* Post+CoreDataClass.swift */; };
+		3AA4F0152C7C018600D02E05 /* Post+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA4F0132C7C018600D02E05 /* Post+CoreDataProperties.swift */; };
+		3AA4F0172C7C189400D02E05 /* PostViewCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA4F0162C7C189400D02E05 /* PostViewCellController.swift */; };
+		3AA4F0192C7C300E00D02E05 /* UpdatePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA4F0182C7C300E00D02E05 /* UpdatePostViewController.swift */; };
+		3AEE6F3A2C7847510076E7F5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEE6F392C7847510076E7F5 /* HomeViewController.swift */; };
 		3AF80CA62C76FFF00069EC6D /* ThreAdY.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3AF80CA42C76FFF00069EC6D /* ThreAdY.xcdatamodeld */; };
 		3AF80CAE2C7715BA0069EC6D /* SessionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF80CAD2C7715BA0069EC6D /* SessionHelper.swift */; };
 /* End PBXBuildFile section */
@@ -30,8 +38,8 @@
 		3A1CDBC32C756ED500FB197E /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		3A1CDBC52C7571A500FB197E /* NavigationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationService.swift; sourceTree = "<group>"; };
 		3A1CDBC72C75720600FB197E /* PageDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageDestination.swift; sourceTree = "<group>"; };
-		3A809BD52C771EEC009735AB /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "User+CoreDataClass.swift"; path = "ThreAdY/Models/User+CoreDataClass.swift"; sourceTree = "<group>"; };
-		3A809BD62C771EEC009735AB /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "User+CoreDataProperties.swift"; path = "ThreAdY/Models/User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3A87D82F2C78503A008EEA48 /* CreatePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostViewController.swift; sourceTree = "<group>"; };
+		3A87D8312C78504A008EEA48 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		3A8BA02A2C74429000C26FCF /* ThreAdY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreAdY.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A8BA02D2C74429000C26FCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A8BA02F2C74429000C26FCF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +50,14 @@
 		3A8BA0452C7444AA00C26FCF /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		3A8BA0482C74558C00C26FCF /* AlertHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
 		3A8BA04A2C745E1500C26FCF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3AA4F0082C7BF1E600D02E05 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "User+CoreDataClass.swift"; path = "ThreAdY/Models/User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3AA4F0092C7BF1E600D02E05 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "User+CoreDataProperties.swift"; path = "ThreAdY/Models/User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3AA4F0102C7C00D800D02E05 /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
+		3AA4F0122C7C018600D02E05 /* Post+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Post+CoreDataClass.swift"; path = "ThreAdY/Models/Post+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3AA4F0132C7C018600D02E05 /* Post+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Post+CoreDataProperties.swift"; path = "ThreAdY/Models/Post+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3AA4F0162C7C189400D02E05 /* PostViewCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewCellController.swift; sourceTree = "<group>"; };
+		3AA4F0182C7C300E00D02E05 /* UpdatePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePostViewController.swift; sourceTree = "<group>"; };
+		3AEE6F392C7847510076E7F5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3AF80CA52C76FFF00069EC6D /* ThreAdY.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ThreAdY.xcdatamodel; sourceTree = "<group>"; };
 		3AF80CAD2C7715BA0069EC6D /* SessionHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,6 +78,7 @@
 			children = (
 				3A1CDBC02C756CE700FB197E /* UserService.swift */,
 				3A1CDBC52C7571A500FB197E /* NavigationService.swift */,
+				3AA4F0102C7C00D800D02E05 /* PostService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -78,8 +95,10 @@
 		3A8BA0212C74429000C26FCF = {
 			isa = PBXGroup;
 			children = (
-				3A809BD52C771EEC009735AB /* User+CoreDataClass.swift */,
-				3A809BD62C771EEC009735AB /* User+CoreDataProperties.swift */,
+				3AA4F0122C7C018600D02E05 /* Post+CoreDataClass.swift */,
+				3AA4F0132C7C018600D02E05 /* Post+CoreDataProperties.swift */,
+				3AA4F0082C7BF1E600D02E05 /* User+CoreDataClass.swift */,
+				3AA4F0092C7BF1E600D02E05 /* User+CoreDataProperties.swift */,
 				3A8BA02C2C74429000C26FCF /* ThreAdY */,
 				3A8BA02B2C74429000C26FCF /* Products */,
 			);
@@ -116,6 +135,11 @@
 			children = (
 				3A8BA04A2C745E1500C26FCF /* LoginViewController.swift */,
 				3A8BA0452C7444AA00C26FCF /* RegisterViewController.swift */,
+				3AEE6F392C7847510076E7F5 /* HomeViewController.swift */,
+				3A87D82F2C78503A008EEA48 /* CreatePostViewController.swift */,
+				3A87D8312C78504A008EEA48 /* ProfileViewController.swift */,
+				3AA4F0162C7C189400D02E05 /* PostViewCellController.swift */,
+				3AA4F0182C7C300E00D02E05 /* UpdatePostViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -204,11 +228,19 @@
 				3A1CDBC62C7571A500FB197E /* NavigationService.swift in Sources */,
 				3A1CDBC12C756CE700FB197E /* UserService.swift in Sources */,
 				3A8BA04B2C745E1500C26FCF /* LoginViewController.swift in Sources */,
-				3A809BD72C771EEC009735AB /* User+CoreDataClass.swift in Sources */,
-				3A809BD82C771EEC009735AB /* User+CoreDataProperties.swift in Sources */,
+				3AA4F0172C7C189400D02E05 /* PostViewCellController.swift in Sources */,
+				3AEE6F3A2C7847510076E7F5 /* HomeViewController.swift in Sources */,
+				3A87D8322C78504A008EEA48 /* ProfileViewController.swift in Sources */,
 				3A8BA02E2C74429000C26FCF /* AppDelegate.swift in Sources */,
+				3AA4F00C2C7BF1E600D02E05 /* User+CoreDataClass.swift in Sources */,
+				3AA4F0142C7C018600D02E05 /* Post+CoreDataClass.swift in Sources */,
+				3AA4F0192C7C300E00D02E05 /* UpdatePostViewController.swift in Sources */,
+				3AA4F0152C7C018600D02E05 /* Post+CoreDataProperties.swift in Sources */,
+				3AA4F00D2C7BF1E600D02E05 /* User+CoreDataProperties.swift in Sources */,
 				3A8BA0302C74429000C26FCF /* SceneDelegate.swift in Sources */,
 				3A8BA0492C74558C00C26FCF /* AlertHelper.swift in Sources */,
+				3A87D8302C78503A008EEA48 /* CreatePostViewController.swift in Sources */,
+				3AA4F0112C7C00D800D02E05 /* PostService.swift in Sources */,
 				3AF80CA62C76FFF00069EC6D /* ThreAdY.xcdatamodeld in Sources */,
 				3AF80CAE2C7715BA0069EC6D /* SessionHelper.swift in Sources */,
 				3A8BA0462C7444AA00C26FCF /* RegisterViewController.swift in Sources */,

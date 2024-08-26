@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 class SessionHelper {
     
@@ -32,7 +33,7 @@ class SessionHelper {
         return username
     }
     
-    func clearSession(){
+    func logout(){
         UserDefaults.standard.removeObject(forKey: key)
     }
     

@@ -32,13 +32,15 @@ class LoginViewController: UIViewController {
             return
         }
         
-        // TODO: Navigate ke home page.
+        NavigationService.shared.navigate(to: .home, from: self)
         
         AlertHelper.shared
             .alert(title: "Success", message: response.message, on: self)
     }
     
+    
     @IBAction func BtnSignUpOnClick(_ sender: Any) {
         NavigationService.shared.navigate(to: .register, from: self)
     }
+    
 }

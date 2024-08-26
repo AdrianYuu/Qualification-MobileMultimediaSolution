@@ -10,4 +10,8 @@ import Foundation
 enum PageDestination {
     case login
     case register
+    case home
+    case createPost
+    case updatePost(post: Post)
+    case profile
 }

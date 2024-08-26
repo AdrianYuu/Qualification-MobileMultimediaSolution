@@ -38,9 +38,7 @@ class RegisterViewController: UIViewController {
             .alert(title: "Success", message: response.message, on: self)
     }
     
-    
     @IBAction func BtnSignInOnClick(_ sender: Any) {
         NavigationService.shared.navigate(to: .login, from: self)
     }
-    
 }
