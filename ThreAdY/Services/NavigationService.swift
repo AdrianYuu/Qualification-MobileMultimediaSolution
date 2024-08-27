@@ -55,9 +55,10 @@ class NavigationService {
                 let updateVC = storyboard?.instantiateViewController(withIdentifier: "UpdatePostView") as! UpdatePostViewController
                 updateVC.post = post
                 viewControllerToPush = updateVC
-                transition.duration = 0.5
-                transition.type = .fade
-                transition.timingFunction = CAMediaTimingFunction(name: .easeInEaseOut)
+                transition.duration = 0.4
+                transition.type = .moveIn
+                transition.subtype = .fromTop
+                transition.timingFunction = CAMediaTimingFunction(name: .linear)
                 break
                 
             case .profile:
