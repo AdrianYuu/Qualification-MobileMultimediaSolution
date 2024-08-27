@@ -39,31 +39,32 @@ class PostService {
             return Response(isSuccess: false, message: "Content type must be 'Food', 'Tech', 'Music', 'Travel', or 'Gaming'.", payload: nil)
         }
         
+        let cleanedContent = content.replacingOccurrences(of: "\\s+", with: " ", options: .regularExpression)
+        
+        let post = Post(context: context)
+        post.content = cleanedContent
+        post.contentType = contentType
+        post.uploadedAt = uploadedAt
+        post.user = user
+        
+        user.addToPosts(post)
+        
         do {
-            let post = Post(context: context)
-            post.content = content
-            post.contentType = contentType
-            post.uploadedAt = uploadedAt
-            post.user = user
-            
-            user.addToPosts(post)
-            
             try context.save()
-            
             return Response(isSuccess: true, message: "Successfully create post.", payload: post)
         } catch {
             return Response(isSuccess: false, message: "Failed to create post.", payload: nil)
         }
     }
     
-    func getPosts() -> [Post] {
+    func getPosts() -> Response {
         let fetchRequest: NSFetchRequest<Post> = Post.fetchRequest()
         
         do {
-            return try context.fetch(fetchRequest)
+            let posts = try context.fetch(fetchRequest)
+            return Response(isSuccess: true, message: "Successfully fetched posts.", payload: posts)
         } catch {
-            print("Failed to fetch posts: \(error)")
-            return []
+            return Response(isSuccess: false, message: "Failed to fetch posts.", payload: nil)
         }
     }
     
@@ -96,7 +97,9 @@ class PostService {
             return Response(isSuccess: false, message: "Content type must be 'Food', 'Tech', 'Music', 'Travel', or 'Gaming'.", payload: nil)
         }
         
-        post.content = newContent
+        let cleanedContent = newContent.replacingOccurrences(of: "\\s+", with: " ", options: .regularExpression)
+        
+        post.content = cleanedContent
         post.contentType = newContentType
         
         do {

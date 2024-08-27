@@ -85,7 +85,10 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func fetchPosts(){
-        posts = PostService.shared.getPosts()
+        let response = PostService.shared.getPosts()
+        if response.isSuccess {
+            posts = response.payload as! [Post]
+        }
     }
 }
 
